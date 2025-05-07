@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Events & Interactivity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive JavaScript Playground</h1>
+  </header>
+
+  <main>
+    <!-- Event Handling Section -->
+    <section id="event-handling">
+      <h2>Event Handling</h2>
+      <button id="change-text-btn">Click Me</button>
+      <div id="hover-box">Hover Over Me</div>
+      <input type="text" id="keypress-input" placeholder="Type something...">
+      <button id="secret-action-btn">Double-Click Me</button>
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section id="interactive-elements">
+      <h2>Interactive Elements</h2>
+      <button id="color-change-btn">Change My Color</button>
+      <div id="image-gallery">
+        <img id="gallery-img" src="https://via.placeholder.com/300" alt="Gallery Image">
+        <button id="next-img-btn">Next Image</button>
+      </div>
+      <div id="tabs">
+        <button class="tab-btn" data-tab="1">Tab 1</button>
+        <button class="tab-btn" data-tab="2">Tab 2</button>
+        <div id="tab-content-1" class="tab-content">Content for Tab 1</div>
+        <div id="tab-content-2" class="tab-content hidden">Content for Tab 2</div>
+      </div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section id="form-validation">
+      <h2>Form Validation</h2>
+      <form id="validation-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="email-error" class="error hidden">Invalid email format</span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span id="password-error" class="error hidden">Password must be at least 8 characters</span>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
